@@ -1,6 +1,7 @@
 //! # revm-interpreter
 //!
 //! REVM Interpreter.
+#![feature(inline_const)]
 #![cfg_attr(not(test), warn(unused_crate_dependencies))]
 #![cfg_attr(not(feature = "std"), no_std)]
 
@@ -9,6 +10,7 @@ extern crate alloc as std;
 
 #[macro_use]
 mod macros;
+
 
 // silence lint
 #[cfg(test)]
